@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import SearchBar from "./SearchBar";
 import CountryList from "./CountryList";
-import "./App.css";
+import "./styles.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -24,7 +24,7 @@ const App = () => {
       // Set the countries and filteredCountries states with the fetched data
       setCountries(data);
       setFilteredCountries(data);
-      console.error("Success");
+      console.log("Success");
       toast.success("All countries fetched!");
     } catch (error) {
       console.error("There was an error fetching the country data:", error);
@@ -38,6 +38,8 @@ const App = () => {
     const filteredResults = countries.filter((country) =>
       country.toLowerCase().includes(toSearch.toLowerCase())
     );
+
+    if (filteredResults.length === 0) toast.error("No results found");
     setFilteredCountries(filteredResults);
   };
 
