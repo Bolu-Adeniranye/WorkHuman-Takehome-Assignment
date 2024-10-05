@@ -9,7 +9,7 @@
   font-size: 18px; /* Increase font size for better readability */
   border: 2px solid #ccc; /* Base border color */
   border-radius: 25px; /* More pronounced rounded corners */
-  width: 400px; /* Set a wider width for more elegance */
+  width: 450px; /* Set a wider width for more elegance */
   transition: all 0.3s ease; /* Smooth transition for all changes */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
   background: linear-gradient(

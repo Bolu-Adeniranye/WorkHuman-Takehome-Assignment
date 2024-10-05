@@ -24,20 +24,5 @@ def get_countries():
     conn.close()
     return jsonify(countries)
 
-# Route to get countries by search term
-@app.route('/api/countries/search', methods=['GET'])
-def search_countries():
-    search_term = request.args.get('q', '').lower()
-    conn = connect_db()
-    cursor = conn.cursor()
-    
-    # Fetch countries that match the search term
-    cursor.execute("SELECT name FROM countries WHERE LOWER(name) LIKE ?", ('%' + search_term + '%',))
-    countries = [row['name'] for row in cursor.fetchall()]
-    
-    conn.close()
-    return jsonify(countries)
-
-
 if __name__ == '__main__':
     app.run(debug=True)

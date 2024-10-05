@@ -22,7 +22,7 @@ const CountryList = ({ countries }) => {
           </button>
         ))
       ) : (
-        <p>No countries found</p> // Message if no countries are available
+        <p>Search for a country</p> // Message if no countries are available
       )}
     </div>
   );
