@@ -1,0 +1,16 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+li {
+  color: #333;
+}

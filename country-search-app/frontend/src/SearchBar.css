@@ -1,0 +1,44 @@
+.search-container {
+  display: flex;
+  justify-content: center; /* Center the search bar horizontally */
+  margin-top: 20px; /* Add space above */
+}
+
+.search-input {
+  padding: 15px; /* Increase padding for better touch targets */
+  font-size: 18px; /* Increase font size for better readability */
+  border: 2px solid #ccc; /* Base border color */
+  border-radius: 25px; /* More pronounced rounded corners */
+  width: 400px; /* Set a wider width for more elegance */
+  transition: all 0.3s ease; /* Smooth transition for all changes */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  background: linear-gradient(
+    135deg,
+    #f0f4f8,
+    #e4eff9
+  ); /* Soft gradient background */
+}
+
+.search-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3); /* Enhance shadow on focus */
+}
+
+.search-input::placeholder {
+  color: #aaa; /* Lighter color for placeholder */
+  font-style: italic; /* Italicize placeholder text */
+}
+
+/* Optional: Add an animation for input focus */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+}
