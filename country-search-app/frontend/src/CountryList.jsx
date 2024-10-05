@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import "./CountryList.css";
 
 const CountryList = ({ countries }) => {
   // Function to handle country button clicks
@@ -11,7 +10,7 @@ const CountryList = ({ countries }) => {
   return (
     <div className="container">
       {/* Check if there are countries to display */}
-      {countries.length > 0 ? (
+      {countries.length > 0 &&
         countries.map((country, index) => (
           <button
             key={index} // Use index as the key
@@ -20,10 +19,7 @@ const CountryList = ({ countries }) => {
           >
             {country} {/* Display the country name */}
           </button>
-        ))
-      ) : (
-        <p>Search for a country</p> // Message if no countries are available
-      )}
+        ))}
     </div>
   );
 };

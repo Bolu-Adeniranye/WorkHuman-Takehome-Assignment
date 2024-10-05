@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import "./SearchBar.css";
 
 const SearchBar = ({ setSearchTerm, searchTerm }) => {
   // Handle input change and update the search term state
