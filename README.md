@@ -65,6 +65,5 @@ Make sure you have the following installed:
     Ensure both the frontend and backend servers are running for the application to work correctly.
     You may need to adjust CORS settings in the Flask app if accessing from different origins.
 
-License
-
+## License
 This project is licensed under the MIT License
